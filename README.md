@@ -4,6 +4,14 @@ A growing list of regular expressions and related resources. Each folder has a f
 
 Some of the regexes will not work forever so I've provided scripts for updating them when possible.
 
+Every pattern and its documented examples can be checked with:
+
+```
+python3 test_regexes.py
+```
+
+It compiles each regex in every `Regex.md` and asserts the "Matches" / "Does not match" examples, so a bad edit fails loudly.
+
 ## Categories
 
 - [Colors](Colors/Regex.md) — hex color codes
