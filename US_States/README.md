@@ -8,4 +8,10 @@ You can find a script for updating the list of regexes here: [`get_latest_regexe
 
 I've provided this script because the list of US zip codes grows and changes over time. So if the last updated date is from a while ago, you'll probably want to update the regexes.
 
+To run the script you'll need [`uszipcode`](https://pypi.org/project/uszipcode/), which as of its 1.0.1 release is incompatible with SQLAlchemy 2.x, so pin the older versions:
+
+```
+pip install uszipcode "SQLAlchemy<2" "sqlalchemy_mate==1.4.28.4"
+```
+
 
